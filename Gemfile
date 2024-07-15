@@ -62,5 +62,12 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  gem 'pg', '>= 0.18', '< 2.0'
+  gem 'puma', '~> 3.11'
+  gem 'sassc-rails', '>= 2.1.2'
+  gem 'uglifier', '>= 1.3.0'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
